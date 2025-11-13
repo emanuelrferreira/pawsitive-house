@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+
+:root {
+    --primary:#d4a5a5;
+    --background:#faf8f5;
+    --secondary: #b8d4d4;
+    --pforeground:#ffffff;
+    --sforeground: #3d3935;
+    --accent:#e8d5c4;
+    --muted:#f0ebe5;
+    --border:#e8dfd5;
+    
+}
+
+
+/* header */
+
+
+
+/* footer */
