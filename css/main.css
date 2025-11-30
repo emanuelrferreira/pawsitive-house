@@ -1,0 +1,292 @@
+/* home - Emanuel Ferreira*/
+
+/* hero section */
+.hero {
+    background: linear-gradient(to bottom, var(--muted), var(--background));
+    padding: 3.5rem 0 4.5rem;
+}
+
+.hero-inner {
+    display: grid;
+    grid-template-columns: 1.1fr 1fr;
+    gap: 3rem;
+    align-items: center;
+}
+
+/* hero left side */
+.hero-left {
+    display: flex;
+    flex-direction: column;
+    gap: 1.4rem;
+}
+
+.hero-title {
+    font-family: var(--font-title);
+    font-size: var(--font-size-h1);
+    line-height: 1.1;
+}
+
+.hero-subtitle {
+    max-width: 30rem;
+    color: var(--sforeground);
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 1rem;
+}
+
+/* hero  right side */
+
+.hero-image-wrapper {
+    width: 500px;         
+    height: 500px;
+}
+
+.hero-image-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    border-radius: 1.4rem;
+    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.08);
+    
+}
+
+/* "Why choose Pawsitive House" section */
+.why {
+    padding: 3rem 0;
+}
+
+.section-heading {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.section-heading h2 {
+    font-family: var(--font-title);
+    font-size: var(--font-size-h2);
+}
+
+.section-heading span,
+.peace-list span {
+    color: var(--primary);
+}
+
+.feature-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+}
+
+.feature-card {
+    background: #fff;
+    border: 1px solid var(--border);
+    padding: 1.5rem;
+    border-radius: 1.2rem;
+    text-align: center;
+}
+
+.feature-icon {
+    font-size: 1.8rem;
+    margin-bottom: 0.6rem;
+}
+
+/* befenits last section */
+
+.benefits {
+    padding: 3rem 0;
+}
+
+.benefits-list span {
+    color: var(--primary);
+    font-weight: 600;
+}
+
+.benefits-inner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: center;
+}
+
+.benefits-image-wrapper img {
+    border-radius: 1.4rem;
+    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.08);
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 25%;
+}
+
+.benefits-image-wrapper {
+    width: 500px;         
+    height: 500px;        
+    border-radius: 1.6rem;
+}
+
+
+.benefits-content h2 {
+    font-family: var(--font-title);
+    margin-bottom: 1rem;
+}
+
+.benefits-list {
+    list-style: none;
+    margin: 1rem 0 1.5rem;
+}
+
+.benefits-list li {
+    position: relative;
+    padding-left: 1.3rem;
+    margin-bottom: 0.4rem;
+}
+
+.benefits-list li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: var(--primary);
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+
+    .hero-inner,
+    .benefits-inner {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+    }
+
+    .feature-grid {
+        grid-template-columns: 1fr;
+    }
+    .benefits-list li::before {
+    position: relative;
+    margin-right: 0.6rem;
+}
+
+    .about-inner {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-image-wrapper {
+        max-width: 80%;
+        margin: 0 auto;
+    }
+
+    .about-content {
+        padding: 0 1rem;
+    }
+
+    .about-list {
+        text-align: left;
+        margin: 1rem auto;
+    }
+}
+
+
+/* About us page - Priscila Krahl*/
+.about-page-content{
+    background: linear-gradient(to bottom, var(--muted), var(--background));
+    padding: 3.5rem 0 4.5rem;
+}
+
+.about-title{
+    font-family: var(--font-title);
+    font-size: var(--font-size-h1);
+    text-align: center;
+    margin-top: 1.5rem;
+}
+
+.about-subtitle{
+    text-align: center;
+    color: var(--sforeground);
+    font-family: var(--font-body);
+    font-size: 1.3rem;
+    margin-top: 0.5rem;
+    margin-bottom: 2rem;
+}
+
+.about-hello{
+    font-family: var(--font-title);
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    width: 100%;
+    display: block;  
+}
+
+.about{
+    padding: 3rem 1.5rem;
+}
+
+.about-inner{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    width: 70%;
+    margin: 0 auto;
+    align-items: flex-start;
+}
+
+.about-image-wrapper{
+    flex: 0 0 50%;
+}
+
+.about-image-wrapper img{
+    width: 100%;
+    border-radius: 0.75rem;
+    box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.1);
+}
+
+.about-content{
+    flex: 1;
+    font-family: var(--font-body);
+    font-size: 1.3rem;
+    line-height: 1.6;
+}
+
+.about-content p{
+    margin-bottom: 1rem;
+    text-align: justify;
+}
+
+.about-list-wrapper {
+    font-family: var(--font-body);
+    font-size: 1.3rem;
+    line-height: 1.6;
+    width: 70%;
+    margin: 1.3rem auto;
+    text-align: justify;
+}
+
+.about-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.about-list li {
+    position: relative;
+    padding-left: 2rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+
+.about-list li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 1.2rem;
+    line-height: 1.2;
+}
+
+/* services */
+
+/* contact */
