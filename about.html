@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About us</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/global.css">
     <link rel="stylesheet" href="css/main.css">
     <title>About</title>
@@ -30,6 +32,7 @@
     <main class="about-page-content">
     <!-- Title and subtitle of the page  --> 
     <h1 class="about-title">Get to know us</h1>
+    <hr>
     <p class="about-subtitle">Passionate about pets, dedicated to their wellbeing.</p>
     <!-- Section with an image and the main text of the page  --> 
     <section class="about">
@@ -48,13 +51,84 @@
         </div>
             <!-- List below the image/text block -->
             <div class="container about-list-wrapper">
-                                <ul class="about-list">
+                <ul class="about-list">
                     <li><b>Customized Care</b>: Each pet has unique needs, routines, and personality. We tailor our care to make their stay as smooth and comfortable as possible.</li>
                     <li><b>Cozy Environment</b>: Our home is adapted to keep pets safe and comfortable. Staying in a familiar, cozy space helps reduce stress and makes them feel at ease.</li>
                     <li><b>Regular Updates</b>: We provide updates with photos and messages according to your preference, so you can see how happy and well cared for your pet is while you’re away.</li>
                 </ul>
             </div>
     </section>
+    <!-- Pets Carousel Title  --> 
+    <h2 class="about-title">Happy Pets We've Cared For</h2>
+    <hr>
+    <!-- Carousel with Bootstrap --> 
+    <div id="carouselPets" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+        <!-- Carousel with photos of pets -->
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="card">
+                    <img src="img/Pet1.jpg" class="card-img-top" alt="White dog on a chair at the table">
+                    <div class="card-body">
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="card">
+                    <img src="img/Pet2.jpg" class="card-img-top" alt="Brown dog sitting on the window sill looiking outside and a blac dog on the couch">
+                    <div class="card-body">
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="card">
+                    <img src="img/Pet3.jpg" class="card-img-top" alt="Black sausage dog smiling">
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="card">
+                    <img src="img/Pet4.jpg" class="card-img-top" alt="Brown dog walking outside">
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="card">
+                    <img src="img/Pet5.jpg" class="card-img-top" alt="One white dogs and two brown dogs looking at the camera">
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="card">
+                    <img src="img/Pet6.jpg" class="card-img-top" alt="Light brown dog cuddling">
+                </div>
+            </div>    
+            <div class="carousel-item">
+                <div class="card">
+                    <img src="img/Pet7.jpg" class="card-img-top" alt="Brown dog on the couch">
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="card">
+                    <img src="img/Pet8.jpg" class="card-img-top" alt="Beige and brown cat on the chair">
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="card">
+                    <img src="img/Pet9.jpg" class="card-img-top" alt="Beige dog walking outside in the woods">
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="card">
+                    <img src="img/Pet10.jpg" class="card-img-top" alt="Gray cat looking at the camera">
+                </div>
+            </div>                                                                               
+        </div>
+        <!-- Carousel controls -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselPets" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselPets" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+    </div>
     </main>
     <!-- footer -->
     <footer class="site-footer" id="contact">
@@ -85,5 +159,7 @@
             © 2025 Pawsitive House — Made with ❤️ for pets
         </div>
     </footer>
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
