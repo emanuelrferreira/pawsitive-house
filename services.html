@@ -26,6 +26,185 @@
         </div>
     </header>
     <!-- start here  -->
+<main>
+    <!--Services -->
+    <section class="services-hero">
+        <div class="container">
+            <h1 class="page-title">Services & Pricing</h1>
+            <p class="page-subtitle"> Flexible care options to suit your pet's needs</p>
+        </div>
+    </section>
+
+    <!--Prices and Services-->
+    <section class="services-pricing">
+        <div class="container pricing-grid">
+    <!--Card 1-->
+    <article class="price-card">
+        <div class="feature-icon">🌙</div>
+        <h3> Dog Boarding (Overnight stay) </h3>
+        <p class="price-description"> 
+            Overnight stay in a cozy, supervised home environment.
+        </p>
+        <div class="price-options">
+            <div class="price-row">
+                <span>€30 per night</span>
+                <span> 
+                    <p><small>* Additional dogs from the same household: €20 each per night</small></p>
+                </span>
+            </div>
+        </div>
+    </article>
+
+    <!--Card 2-->
+    <article class="price-card">
+        <div class="feature-icon">☀️</div>
+        <h3> Dog Day Care (8am - 6pm)</h3>
+        <p class="price-description"> Your best friend will never be alone.
+        </p>
+        <div class="price-options">
+            <div class="price-row">
+                <span>€20 per day</span>
+                <span> 
+                    <p><small>* Additional dogs from the same household: €20 each per day</small></p>
+                </span>
+            </div>
+        </div>
+    </article>
+
+    <!--Card 3-->
+    <article class="price-card">
+        <div class="feature-icon">☀️</div>
+        <h3> Pet Visits (30 minutes) </h3>
+        <p class="price-description"> Short check-ins with feeding, playtime and updates.
+        </p>
+        <div class="price-options">
+            <div class="price-row">
+                <span>€15 per visit </span>
+                <span>
+                    <p><small>*Price may vary depending on location and number of pets.</small></p>
+                </span>
+            </div>
+        </div>
+    </article>
+        </div>
+    </section>
+
+    <!--Second Row of cards-->
+
+    <section class="services-details">
+        <div class="container">
+            <div class="section-heading">
+          <h2>What's Included</h2>
+        </div>
+        <div class="details-grid">
+     <!-- Card 1 - what is included -->
+    <article class="detail-card">
+        <h3>Dog Boarding (Overnight stay)</h3>
+            <h4>What is included</h4>
+            <ul class="detail-list">
+              <li>Safe, clean sleeping area</li>
+              <li>Access to outdoor areas</li>
+              <li>Daily walks</li>
+              <li>Fresh water available at all times</li>
+              <li>Support for special diets or allergies</li>
+              <li>Medication administration (if needed)</li>
+              <li>Daily updates</li>
+              <li>Companionship</li>
+            </ul>
+
+        <a href="#"
+            class="more-link"
+             onclick="toggleBoarding(event)">
+            what to bring?
+        </a>
+
+        <ul class="detail-list" id="boarding-extra" style="display: none;">
+            <li>Your dog's own food and treats.</li>
+            <li>Any necessary medications, with clear instructions.</li>
+            <li>Familiar items like a favorite blanket, bed, or toy.</li>
+            <li>A collar with an ID tag and a leash.</li>
+        </ul>
+    </article>
+
+    <!-- Card 2 - what is included -->
+    <article class="detail-card">
+        <h3>Dog Day Care (8am – 6pm)</h3>
+            <h4>What is included</h4>
+            <ul class="detail-list">
+              <li>Safe, clean resting area</li>
+              <li>Access to outdoor areas</li>
+              <li>Daily walk</li>
+              <li>Fresh water available at all times</li>
+              <li>Support for special diets or allergies</li>
+              <li>Medication administration (if needed)</li>
+              <li>Updates during the day</li>
+              <li>Companionship</li>
+            </ul>
+
+            <a href="#"
+               class="more-link"
+               onclick="toggleDaycare(event)">
+              what to bring?
+            </a>
+
+            <ul class="detail-list" id="daycare-extra" style="display: none;">
+              <li>Your dog's own food and treats.</li>
+              <li>Any necessary medications, with clear instructions.</li>
+              <li>Familiar items like a favorite blanket, bed, or toy.</li>
+              <li>A collar with an ID tag and a leash.</li>
+            </ul>
+          </article>
+
+         <!-- Card 3 - what is included -->
+          <article class="detail-card">
+            <h3>Pet Visits (30 minutes)</h3>
+            <h4>What is included</h4>
+            <ul class="detail-list">
+              <li>Feeding and fresh water refill</li>
+              <li>Short walk or garden break (if requested)</li>
+              <li>Litter box or waste clean-up</li>
+              <li>Medication administration (if needed)</li>
+              <li>Companionship and playtime</li>
+              <li>Basic health check (mood, appetite)</li>
+              <li>Updates after each visit (photos or messages)</li>
+            </ul>
+
+            <a href="#"
+               class="more-link"
+               onclick="toggleVisits(event)">
+              what to prepare?
+            </a>
+
+            <ul class="detail-list" id="visits-extra" style="display: none;">
+              <li>Your pet’s food and treats, ready for use.</li>
+              <li>Any necessary medications, with clear instructions.</li>
+              <li>Access to comfort items (bed, toys, blanket).</li>
+              <li>Clear instructions for routines and preferences.</li>
+              <li>Emergency contact details.</li>
+            </ul>
+          </article>
+        </div>
+    </div>
+    </section>
+
+    <!-- Closing Page-->
+    <section class="services-cta">
+      <div class="container">
+        <h2>Unsure what your furry friend might need?</h2>
+        <p>
+          Let’s discuss your pet’s routine, personality and needs to design a custom care plan that fits perfectly.
+        </p>
+
+        <div class="cta-card">
+          <h3>Let's schedule a quick chat!</h3>
+          <p>
+            I’m happy to help you find the best care option. Book a free consultation and we’ll take it from there.
+          </p>
+          <a href="contact.html" class="btn btn-primary">Contact</a>
+        </div>
+      </div>
+    </section>
+</main>
 
     <!-- footer -->
     <footer class="site-footer" id="contact">
