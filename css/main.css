@@ -306,7 +306,7 @@ hr{
 
 #carouselPets .card{
     border: none;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
     border-radius: 12px;
     overflow: hidden;
     background-color: #fff;
@@ -390,7 +390,192 @@ hr{
 }
 
 
-/* services */
+/* Services - Vinicius Brito */
+
+.services-hero {
+    background: linear-gradient(to bottom, var(--muted), var(--background));
+    padding: 3.5rem 0 2.5rem;
+}
+
+.services-hero .page-title {
+    font-family: var(--font-title);
+    font-size: var(--font-size-h1);
+    text-align: center;
+}
+
+.services-hero .page-subtitle {
+    text-align: center;
+    color: var(--sforeground);
+    max-width: 32rem;
+    margin: 0.5rem auto 0;
+}
+
+/* Cards Price - Vinicius Brito  */
+.services-pricing {
+    padding: 3rem 0 4rem;
+}
+
+.pricing-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1.5rem;
+}
+
+.price-card {
+    background: #fff;
+    text-align: center;
+    border-radius: 1.2rem;
+    border: 1px solid var(--border);
+    padding: 1.6rem;
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.05);
+}
+.price-card h3 {
+    font-family: var(--font-title);
+    font-size: 1.4rem;
+    margin-bottom: 0.4rem;
+}
+
+.price-description {
+    color: var(--grayaccent);
+    font-size: 0.98rem;
+    margin-bottom: 1rem;
+    margin-inline: auto;
+    max-width: 24rem;
+}
+
+.price-options {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.price-badge {
+    display: inline-block;
+    padding: 0.35rem 0.9rem;
+    border-radius: 999px;
+    border: 2px solid var(--accent);
+    background: transparent;   /*https://www.w3schools.com/css/css_background.asp*/
+    color: var(--primary);    
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.price-note {
+    margin-top: 0.4rem;
+    font-size: 0.85rem;
+    color: var(--grayaccent);
+}
+
+
+.price-card .feature-icon {
+    font-size: 2rem;
+    margin-bottom: 0.7rem;
+}
+
+/* What is included section - Vinicius Brito */
+.services-details {
+    padding: 2rem 0 4rem;
+}
+
+.details-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1.5rem;
+}
+
+.detail-card {
+    background: #fff;
+    border-radius: 1.2rem;
+    border: 1px solid var(--border);
+    padding: 1.6rem;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.03);
+}
+
+.detail-card .feature-icon {
+    text-align: center;
+    font-size: 2rem;
+    display: block;
+    margin-bottom: 1rem;
+}
+
+.detail-card h3 {
+    font-family: var(--font-title);
+    font-size: 1.3rem;
+    margin-bottom: 0.6rem;
+}
+
+.price-card h3 .service-subtitle {
+    display: block;
+}
+
+.detail-card h4 {
+    font-size: 0.95rem;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    color: var(--grayaccent);
+    margin: 0.6rem 0;
+}
+
+.detail-list {
+    list-style: none;
+    padding-left: 0;
+    font-size: 0.95rem;
+}
+
+.detail-list li {
+    position: relative;
+    padding-left: 1.3rem;
+    margin-bottom: 0.4rem;
+}
+
+/* Checkmark icon - Vinicius Brito */
+.detail-list li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: var(--primary);
+}
+
+/* Finishing Page - Services- Vinicius Brito*/
+.services-contact {
+    padding: 3rem 0 4rem;
+    text-align: center;
+}
+
+.services-contact h2 {
+    font-family: var(--font-title);
+    font-size: var(--font-size-h2);
+    margin-bottom: 0.8rem;
+}
+
+.services-contact p {
+    max-width: 34rem;
+    margin: 0 auto 2rem;
+}
+
+.contact-card {
+    background: #fff;
+    border-radius: 1.2rem;
+    border: 1px solid var(--border);
+    padding: 2rem 1.8rem;
+    max-width: 32rem;
+    margin: 0 auto;
+    box-shadow: 0 16px 30px rgba(0, 0, 0, 0.05);
+}
+
+.contact-card h3 {
+    font-family: var(--font-title);
+    margin-bottom: 0.6rem;
+}
+
+/* Responsive - Services - Vinicius Brito */
+@media (max-width: 900px) {
+    .pricing-grid,
+    .details-grid {
+        grid-template-columns: 1fr;
+    }
+}
 
 /* Contact Page - Emanuel, Vinicius and Priscila*/
 
