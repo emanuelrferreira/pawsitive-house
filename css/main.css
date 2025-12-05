@@ -380,6 +380,7 @@
 
     #carouselPets {
         max-width: 80%;
+    }
 }
 
 /* Services - Vinicius Brito */
@@ -704,7 +705,6 @@
         flex-direction: column-reverse;
         gap: 2rem;
     }
-
     .contact-form {
         width: 100%;
     }
