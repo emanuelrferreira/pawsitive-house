@@ -473,6 +473,10 @@ hr{
     margin-bottom: 0.7rem;
 }
 
+.spacer {
+    height:1rem;
+}
+
 /* What is included section - Vinicius Brito */
 .services-details {
     padding: 2rem 0 4rem;
