@@ -24,6 +24,7 @@
     font-family: var(--font-title);
     font-size: var(--font-size-h1);
     line-height: 1.1;
+    font-weight: var(--font-weight-normal);
 }
 
 .hero-subtitle {
@@ -99,7 +100,7 @@
 
 .benefits-list span {
     color: var(--primary);
-    font-weight: 600;
+    font-weight: var(--font-weight-normal);
 }
 
 .benefits-inner {
@@ -183,9 +184,9 @@
 .about-title{
     font-family: var(--font-title);
     font-size: var(--font-size-h1);
+    font-weight: var(--font-weight-normal);
     text-align: center;
-    margin-top: 1rem;
-    font-weight: 700;
+    
 }
 
 .about-subtitle{
@@ -201,7 +202,7 @@
     font-family: var(--font-title);
     color: var(--primary);
     font-size: 2.5rem;
-    font-weight: 600;
+    font-weight: var(--font-weight-normal);
     margin-bottom: 1.5rem;
     text-align: center;
     width: 100%;
@@ -272,7 +273,7 @@
 
 .about-page-content h2{
     font-size: var(--font-size-h2);
-    font-weight: 700;
+    font-weight: var(--font-weight-normal);
 }
 
 /* About us page, Carousel - Priscila Krahl*/
@@ -398,6 +399,7 @@
 .services-hero .page-title {
     font-family: var(--font-title);
     font-size: var(--font-size-h1);
+    font-weight: var(--font-weight-normal);
     text-align: center;
 }
 
@@ -455,7 +457,7 @@
     border: 2px solid var(--accent);
     background: transparent;   /*https://www.w3schools.com/css/css_background.asp*/
     color: var(--primary);    
-    font-weight: 600;
+    font-weight: var(--font-weight-normal);
     font-size: 0.9rem;
 }
 
@@ -582,68 +584,102 @@
     padding: 3.5rem 1.5rem 4.5rem;
 }
 
+/* contact title and subtitle */
+
+.contact-title{
+    font-family: var(--font-title);
+    font-size: var(--font-size-h1);
+    font-weight: var(--font-weight-normal);
+    text-align: center;
+}
+
+.contact-subtitle{
+    text-align: center;
+    color: var(--sforeground);
+    font-family: var(--font-body);
+    margin-bottom: 6rem;
+}
+
+/* contact boxes */
+
 .contact-inner {
     display: flex;
     flex-wrap: wrap;
-    gap: 2rem;
+    gap: 5rem;
     max-width: 1000px;
     margin: 0 auto;
     align-items: flex-start;
 }
 
+/* left side contact info */
+
 .contact-info {
     flex: 1;
     min-width: 280px;
-    font-family: var(--font-body);
-    font-size: 1rem;
-    line-height: 1.6;
+    background: var(--pforeground);
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.05);
 }
 
 .contact-info h2 {
     font-family: var(--font-title);
-    font-size: 1.8rem;
-    margin-bottom: 1rem;
+    font-size: var(--font-size-medium);
+    font-weight: var(--font-weight-normal);
+    margin-bottom: .5rem;
 }
 
-.contact-details {
-    list-style: none;
-    padding-left: 0;
+.contact-info > p {
+    font-size: var(--font-size-base);
+    margin-bottom: 2rem;
+}
+
+.contact-inner-title {
+    font-family: var(--font-title);
+    font-size: var(--font-size-base);
+    font-weight: var(--font-weight-normal);
+    margin-bottom: .2rem;
+}
+
+.contact-inner-p {
+    font-family: var(--font-body);
+    font-size: var(--font-size-small);
+}
+
+.line-separation {
+    height: 1px;
+    background-color: var(--border);
     margin: 1rem 0;
 }
 
-.contact-details li {
-    margin-bottom: 0.8rem;
-}
-
-.contact-details a {
-    color: var(--primary);
-    text-decoration: none;
-}
-
-.contact-details a:hover {
-    text-decoration: underline;
+.social-media h3 {
+    font-family: var(--font-title);
+    font-size: var(--font-size-medium);
+    font-weight: var(--font-weight-normal);
 }
 
 .social-links {
     display: flex;
-    gap: 1rem;
-    margin-top: 1rem;
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+    margin-bottom: .2rem;
 }
 
 .social-links a {
     color: var(--primary);
-    font-weight: 600;
-    text-decoration: none;
+    transition: color 0.3s ease;
 }
 
 .social-links a:hover {
-    text-decoration: underline;
+    color: var(--primary-accent);
 }
+
+/* right side contact form */
 
 .contact-form {
     flex: 1;
     min-width: 280px;
-    background: #fff;
+    background: var(--pforeground);
     padding: 2rem;
     border-radius: 1rem;
     box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.05);
@@ -653,32 +689,17 @@
 
 .contact-form label {
     margin-top: 1rem;
-    font-weight: 600;
+    font-size: var(--font-size-small);
+    font-weight: var(--font-weight-normal);
 }
 
 .contact-form input,
 .contact-form textarea {
-    margin-top: 0.5rem;
-    padding: 0.75rem;
+    margin-top: 0.2rem;
+    padding: 0.3rem;
     border: 1px solid var(--border);
     border-radius: 0.5rem;
     font-family: var(--font-body);
-}
-
-.contact-form button {
-    margin-top: 1.5rem;
-    padding: 0.75rem;
-    background-color: #ec4899; /* pink */
-    color: white;
-    border: none;
-    border-radius: 0.5rem;
-    font-weight: 600;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.contact-form button:hover {
-    background-color: #db2777;
 }
 
 /* Responsive - Contact page*/
