@@ -367,30 +367,20 @@
 
 @media (max-width: 900px) {
     .about-inner {
-        flex-direction: column;
-        text-align: center;
+        grid-template-columns: 1fr;
     }
 
     .about-image-wrapper {
-        max-width: 80%;
-        margin: 0 auto;
+        max-width: 100%;
     }
 
     .about-content {
         padding: 0 1rem;
     }
 
-    .about-list {
-        text-align: left;
-        margin: 1rem auto;
-    }
-
-    .contact-grid {
-        grid-template-columns: 1fr;
-    }
+    #carouselPets {
+        max-width: 80%;
 }
-
-/* services */
 
 /* Services - Vinicius Brito */
 
