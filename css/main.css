@@ -40,17 +40,16 @@
 /* hero  right side */
 
 .hero-image-wrapper {
-    width: 500px;         
+    width: 500px;
     height: 500px;
 }
 
 .hero-image-wrapper img {
     width: 100%;
     height: 100%;
-    object-fit: cover; 
+    object-fit: cover;
     border-radius: 1.4rem;
     box-shadow: 0 18px 40px rgba(0, 0, 0, 0.08);
-    
 }
 
 /* "Why choose Pawsitive House" section */
@@ -120,11 +119,10 @@
 }
 
 .benefits-image-wrapper {
-    width: 500px;         
-    height: 500px;        
+    width: 500px;
+    height: 500px;
     border-radius: 1.6rem;
 }
-
 
 .benefits-content h2 {
     font-family: var(--font-title);
@@ -165,31 +163,41 @@
     .feature-grid {
         grid-template-columns: 1fr;
     }
+
     .benefits-list li::before {
-    position: relative;
-    margin-right: 0.6rem;
-}
+        position: relative;
+        margin-right: 0.6rem;
+    }
+
+    .hero-image-wrapper {
+        width: 400px;
+        height: 400px;
+    }
+
+    .benefits-image-wrapper {
+        width: 400px;
+        height: 400px;
+    }
 
     .contact-grid {
-    grid-template-columns: 1fr;
+        grid-template-columns: 1fr;
     }
 }
 
 /* About us page, Text - Priscila Krahl*/
-.about-page-content{
+.about-page-content {
     background: linear-gradient(to bottom, var(--muted), var(--background));
     padding: 3.5rem 0 4.5rem;
 }
 
-.about-title{
+.about-title {
     font-family: var(--font-title);
     font-size: var(--font-size-h1);
     font-weight: var(--font-weight-normal);
     text-align: center;
-    
 }
 
-.about-subtitle{
+.about-subtitle {
     text-align: center;
     color: var(--sforeground);
     font-family: var(--font-body);
@@ -198,7 +206,7 @@
     margin-bottom: 1rem;
 }
 
-.about-hello{
+.about-hello {
     font-family: var(--font-title);
     color: var(--primary);
     font-size: 2.5rem;
@@ -206,10 +214,10 @@
     margin-bottom: 1.5rem;
     text-align: center;
     width: 100%;
-    display: block;  
+    display: block;
 }
 
-.about{
+.about {
     padding: 3rem 1.5rem;
 }
 
@@ -232,10 +240,10 @@
     height: 100%;
     object-fit: cover;
     border-radius: 0.75rem;
-    box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.1);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
 }
 
-.about-content p{
+.about-content p {
     margin-bottom: 0.8rem;
     text-align: justify;
 }
@@ -270,25 +278,24 @@
     line-height: 1.2;
 }
 
-
-.about-page-content h2{
+.about-page-content h2 {
     font-size: var(--font-size-h2);
     font-weight: var(--font-weight-normal);
 }
 
 /* About us page, Carousel - Priscila Krahl*/
-#carouselPets{
+#carouselPets {
     max-width: 500px;
     margin: 2rem auto;
     position: relative;
 }
 
-#carouselPets .carousel-inner{
+#carouselPets .carousel-inner {
     border-radius: 12px;
     overflow: hidden;
 }
 
-#carouselPets .card{
+#carouselPets .card {
     border: none;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     border-radius: 12px;
@@ -297,48 +304,48 @@
     scroll-padding-left: 1rem;
 }
 
-#carouselPets .card-img-top{
+#carouselPets .card-img-top {
     width: 100%;
     height: 400px;
     object-fit: cover;
     border-bottom: 1px solid #eee;
 }
 
-.carousel-item{
+.carousel-item {
     transition: transform 0.6s ease;
     transform: scale(0.98);
 }
 
 .carousel-control-prev-icon,
-.carousel-control-next-icon{
+.carousel-control-next-icon {
     background-size: 100% 100%;
     background-image: none;
 }
 
-.carousel-control-prev-icon::after{
-    content: '‹';
+.carousel-control-prev-icon::after {
+    content: "‹";
     font-size: 2.5rem;
     color: var(--primary);
 }
 
-.carousel-control-next-icon::after{
-    content: '›';
+.carousel-control-next-icon::after {
+    content: "›";
     font-size: 2.5rem;
     color: var(--primary);
 }
 
 .carousel-control-prev,
-.carousel-control-next{
+.carousel-control-next {
     width: auto;
     top: 50%;
     transform: translateY(-50%);
 }
 
-.carousel-control-prev{
+.carousel-control-prev {
     left: -3rem;
 }
 
-.carousel-control-next{
+.carousel-control-next {
     right: -3rem;
 }
 
@@ -358,8 +365,7 @@
 
 /* Responsiveness - About Us page - Priscila Krahl*/
 
-@media (max-width: 900px){
-
+@media (max-width: 900px) {
     .about-inner {
         flex-direction: column;
         text-align: center;
@@ -370,7 +376,6 @@
         margin: 0 auto;
     }
 
-    
     .about-content {
         padding: 0 1rem;
     }
@@ -380,12 +385,10 @@
         margin: 1rem auto;
     }
 
-
     .contact-grid {
-    grid-template-columns: 1fr;
+        grid-template-columns: 1fr;
     }
 }
-
 
 /* services */
 
@@ -429,6 +432,7 @@
     padding: 1.6rem;
     box-shadow: 0 12px 25px rgba(0, 0, 0, 0.05);
 }
+
 .price-card h3 {
     font-family: var(--font-title);
     font-size: 1.4rem;
@@ -455,8 +459,9 @@
     padding: 0.35rem 0.9rem;
     border-radius: 999px;
     border: 2px solid var(--accent);
-    background: transparent;   /*https://www.w3schools.com/css/css_background.asp*/
-    color: var(--primary);    
+    background: transparent;
+    /*https://www.w3schools.com/css/css_background.asp*/
+    color: var(--primary);
     font-weight: var(--font-weight-normal);
     font-size: 0.9rem;
 }
@@ -466,7 +471,6 @@
     font-size: 0.85rem;
     color: var(--grayaccent);
 }
-
 
 .price-card .feature-icon {
     font-size: 2rem;
@@ -571,6 +575,7 @@
 
 /* Responsive - Services - Vinicius Brito */
 @media (max-width: 900px) {
+
     .pricing-grid,
     .details-grid {
         grid-template-columns: 1fr;
@@ -586,14 +591,14 @@
 
 /* contact title and subtitle */
 
-.contact-title{
+.contact-title {
     font-family: var(--font-title);
     font-size: var(--font-size-h1);
     font-weight: var(--font-weight-normal);
     text-align: center;
 }
 
-.contact-subtitle{
+.contact-subtitle {
     text-align: center;
     color: var(--sforeground);
     font-family: var(--font-body);
@@ -619,17 +624,17 @@
     background: var(--pforeground);
     padding: 2rem;
     border-radius: 1rem;
-    box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.05);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.05);
 }
 
 .contact-info h2 {
     font-family: var(--font-title);
     font-size: var(--font-size-medium);
     font-weight: var(--font-weight-normal);
-    margin-bottom: .5rem;
+    margin-bottom: 0.5rem;
 }
 
-.contact-info > p {
+.contact-info>p {
     font-size: var(--font-size-base);
     margin-bottom: 2rem;
 }
@@ -638,7 +643,7 @@
     font-family: var(--font-title);
     font-size: var(--font-size-base);
     font-weight: var(--font-weight-normal);
-    margin-bottom: .2rem;
+    margin-bottom: 0.2rem;
 }
 
 .contact-inner-p {
@@ -662,7 +667,7 @@
     display: flex;
     gap: 1.5rem;
     margin-top: 1.5rem;
-    margin-bottom: .2rem;
+    margin-bottom: 0.2rem;
 }
 
 .social-links a {
@@ -682,7 +687,7 @@
     background: var(--pforeground);
     padding: 2rem;
     border-radius: 1rem;
-    box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.05);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.05);
     display: flex;
     flex-direction: column;
 }
@@ -705,21 +710,16 @@
 /* Responsive - Contact page*/
 
 @media (max-width: 768px) {
-.contact-inner {
-    flex-direction: column;
-    text-align: center;
-}
+    .contact-inner {
+        flex-direction: column-reverse;
+        gap: 2rem;
+    }
 
-.contact-form {
-    width: 100%;
-}
+    .contact-form {
+        width: 100%;
+    }
 
-.contact-info {
-    width: 100%;
+    .contact-info {
+        width: 100%;
+    }
 }
-
-.social-links {
-    justify-content: center;
-}
-}
-
