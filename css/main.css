@@ -24,6 +24,7 @@
     font-family: var(--font-title);
     font-size: var(--font-size-h1);
     line-height: 1.1;
+    font-weight: var(--font-weight-normal);
 }
 
 .hero-subtitle {
@@ -39,17 +40,16 @@
 /* hero  right side */
 
 .hero-image-wrapper {
-    width: 500px;         
+    width: 500px;
     height: 500px;
 }
 
 .hero-image-wrapper img {
     width: 100%;
     height: 100%;
-    object-fit: cover; 
+    object-fit: cover;
     border-radius: 1.4rem;
     box-shadow: 0 18px 40px rgba(0, 0, 0, 0.08);
-    
 }
 
 /* "Why choose Pawsitive House" section */
@@ -99,7 +99,7 @@
 
 .benefits-list span {
     color: var(--primary);
-    font-weight: 600;
+    font-weight: var(--font-weight-normal);
 }
 
 .benefits-inner {
@@ -119,11 +119,10 @@
 }
 
 .benefits-image-wrapper {
-    width: 500px;         
-    height: 500px;        
+    width: 500px;
+    height: 500px;
     border-radius: 1.6rem;
 }
-
 
 .benefits-content h2 {
     font-family: var(--font-title);
@@ -164,33 +163,41 @@
     .feature-grid {
         grid-template-columns: 1fr;
     }
+
     .benefits-list li::before {
-    position: relative;
-    margin-right: 0.6rem;
-}
+        position: relative;
+        margin-right: 0.6rem;
+    }
+
+    .hero-image-wrapper {
+        width: 400px;
+        height: 400px;
+    }
+
+    .benefits-image-wrapper {
+        width: 400px;
+        height: 400px;
+    }
 
     .contact-grid {
-    grid-template-columns: 1fr;
+        grid-template-columns: 1fr;
     }
 }
 
-
-
 /* About us page, Text - Priscila Krahl*/
-.about-page-content{
+.about-page-content {
     background: linear-gradient(to bottom, var(--muted), var(--background));
     padding: 3.5rem 0 4.5rem;
 }
 
-.about-title{
+.about-title {
     font-family: var(--font-title);
     font-size: var(--font-size-h1);
+    font-weight: var(--font-weight-normal);
     text-align: center;
-    margin-top: 1rem;
-    font-weight: 700;
 }
 
-.about-subtitle{
+.about-subtitle {
     text-align: center;
     color: var(--sforeground);
     font-family: var(--font-body);
@@ -199,53 +206,44 @@
     margin-bottom: 1rem;
 }
 
-.about-hello{
+.about-hello {
     font-family: var(--font-title);
     color: var(--primary);
     font-size: 2.5rem;
-    font-weight: 600;
+    font-weight: var(--font-weight-normal);
     margin-bottom: 1.5rem;
     text-align: center;
     width: 100%;
-    display: block;  
+    display: block;
 }
 
-.about{
+.about {
     padding: 3rem 1.5rem;
 }
 
-.about-inner{
-    display: flex;
-    flex-wrap: wrap;
+.about-inner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     gap: 2rem;
-    width: 70%;
+    width: min(90%, 1100px);
     margin: 0 auto;
-    align-items: flex-start;
+    align-items: stretch;
 }
 
-.about-image-wrapper {
-    flex: 0 0 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 0.5rem;
+.about-image-wrapper,
+.about-content {
+    height: 100%;
 }
 
 .about-image-wrapper img {
     width: 100%;
-    height: auto;
+    height: 100%;
+    object-fit: cover;
     border-radius: 0.75rem;
-    box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.1);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
 }
 
-.about-content{
-    flex: 1;
-    font-family: var(--font-body);
-    font-size: 1rem;
-    margin-top: 0.5rem;
-}
-
-.about-content p{
+.about-content p {
     margin-bottom: 0.8rem;
     text-align: justify;
 }
@@ -254,9 +252,9 @@
     font-family: var(--font-body);
     font-size: 1rem;
     line-height: 1.4;
-    width: 70%;
     margin: 1rem auto;
     text-align: justify;
+    width: min(90%, 1100px);
 }
 
 .about-list {
@@ -280,115 +278,110 @@
     line-height: 1.2;
 }
 
-hr{
-    border: none;
-    border-top: 3px solid var(--primary);
-    width: 30%;
-    margin: 1rem auto;
-}
-
-.about-page-content h2{
+.about-page-content h2 {
     font-size: var(--font-size-h2);
-    font-weight: 700;
+    font-weight: var(--font-weight-normal);
 }
 
 /* About us page, Carousel - Priscila Krahl*/
-#carouselPets{
+#carouselPets {
     max-width: 500px;
     margin: 2rem auto;
     position: relative;
 }
 
-#carouselPets .carousel-inner{
+#carouselPets .carousel-inner {
     border-radius: 12px;
     overflow: hidden;
 }
 
-#carouselPets .card{
+#carouselPets .card {
     border: none;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     border-radius: 12px;
     overflow: hidden;
     background-color: #fff;
     scroll-padding-left: 1rem;
 }
 
-#carouselPets .card-img-top{
+#carouselPets .card-img-top {
     width: 100%;
     height: 400px;
     object-fit: cover;
     border-bottom: 1px solid #eee;
 }
 
-.carousel-item{
+.carousel-item {
     transition: transform 0.6s ease;
     transform: scale(0.98);
 }
 
 .carousel-control-prev-icon,
-.carousel-control-next-icon{
+.carousel-control-next-icon {
     background-size: 100% 100%;
     background-image: none;
 }
 
-.carousel-control-prev-icon::after{
-    content: '‹';
+.carousel-control-prev-icon::after {
+    content: "‹";
     font-size: 2.5rem;
     color: var(--primary);
 }
 
-.carousel-control-next-icon::after{
-    content: '›';
+.carousel-control-next-icon::after {
+    content: "›";
     font-size: 2.5rem;
     color: var(--primary);
 }
 
 .carousel-control-prev,
-.carousel-control-next{
+.carousel-control-next {
     width: auto;
     top: 50%;
     transform: translateY(-50%);
 }
 
-.carousel-control-prev{
+.carousel-control-prev {
     left: -3rem;
 }
 
-.carousel-control-next{
+.carousel-control-next {
     right: -3rem;
 }
 
+.about-page {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.about-page main {
+    flex: 1;
+}
+
+.about-page .site-footer {
+    margin-top: auto;
+}
 
 /* Responsiveness - About Us page - Priscila Krahl*/
 
-@media (max-width: 900px){
-
+@media (max-width: 900px) {
     .about-inner {
-        flex-direction: column;
-        text-align: center;
+        grid-template-columns: 1fr;
     }
 
     .about-image-wrapper {
-        max-width: 80%;
-        margin: 0 auto;
+        max-width: 100%;
     }
 
-    
     .about-content {
         padding: 0 1rem;
     }
 
-    .about-list {
-        text-align: left;
-        margin: 1rem auto;
-    }
-
-
-    .contact-grid {
-    grid-template-columns: 1fr;
+    #carouselPets {
+        max-width: 80%;
     }
 }
-
 
 /* Services - Vinicius Brito */
 
@@ -400,6 +393,7 @@ hr{
 .services-hero .page-title {
     font-family: var(--font-title);
     font-size: var(--font-size-h1);
+    font-weight: var(--font-weight-normal);
     text-align: center;
 }
 
@@ -429,6 +423,7 @@ hr{
     padding: 1.6rem;
     box-shadow: 0 12px 25px rgba(0, 0, 0, 0.05);
 }
+
 .price-card h3 {
     font-family: var(--font-title);
     font-size: 1.4rem;
@@ -455,9 +450,10 @@ hr{
     padding: 0.35rem 0.9rem;
     border-radius: 999px;
     border: 2px solid var(--accent);
-    background: transparent;   /*https://www.w3schools.com/css/css_background.asp*/
-    color: var(--primary);    
-    font-weight: 600;
+    background: transparent;
+    /*https://www.w3schools.com/css/css_background.asp*/
+    color: var(--primary);
+    font-weight: var(--font-weight-normal);
     font-size: 0.9rem;
 }
 
@@ -466,7 +462,6 @@ hr{
     font-size: 0.85rem;
     color: var(--grayaccent);
 }
-
 
 .price-card .feature-icon {
     font-size: 2rem;
@@ -541,6 +536,41 @@ hr{
     color: var(--primary);
 }
 
+/*Lists - What to bring/ prepare* Vinicius Brito*/
+.boarding-wtb-list,
+.daycare-wtb-list,
+.visit-wtp-list{
+    margin-top: 1rem;
+    text-align: center;
+    color: var(--secondary);
+    color: var(--greenaccent);
+    font-weight: 600;
+}
+
+.extra-list {
+    display: none;
+    margin-top: 0.75rem;
+    list-style: none;
+    padding-left: 0;
+}
+
+.extra-list.open {
+    display: block;
+}
+
+.extra-list li {
+    position: relative;
+    padding-left: 1.3rem;
+    margin-bottom: 0.4rem;
+}
+
+.extra-list li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: var(--primary);
+}
+
 /* Finishing Page - Services- Vinicius Brito*/
 .services-contact {
     padding: 3rem 0 4rem;
@@ -575,6 +605,7 @@ hr{
 
 /* Responsive - Services - Vinicius Brito */
 @media (max-width: 900px) {
+
     .pricing-grid,
     .details-grid {
         grid-template-columns: 1fr;
@@ -588,123 +619,136 @@ hr{
     padding: 3.5rem 1.5rem 4.5rem;
 }
 
+/* contact title and subtitle */
+
+.contact-title {
+    font-family: var(--font-title);
+    font-size: var(--font-size-h1);
+    font-weight: var(--font-weight-normal);
+    text-align: center;
+}
+
+.contact-subtitle {
+    text-align: center;
+    color: var(--sforeground);
+    font-family: var(--font-body);
+    margin-bottom: 6rem;
+}
+
+/* contact boxes */
+
 .contact-inner {
     display: flex;
     flex-wrap: wrap;
-    gap: 2rem;
+    gap: 5rem;
     max-width: 1000px;
     margin: 0 auto;
     align-items: flex-start;
 }
 
+/* left side contact info */
+
 .contact-info {
     flex: 1;
     min-width: 280px;
-    font-family: var(--font-body);
-    font-size: 1rem;
-    line-height: 1.6;
+    background: var(--pforeground);
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.05);
 }
 
 .contact-info h2 {
     font-family: var(--font-title);
-    font-size: 1.8rem;
-    margin-bottom: 1rem;
+    font-size: var(--font-size-medium);
+    font-weight: var(--font-weight-normal);
+    margin-bottom: 0.5rem;
 }
 
-.contact-details {
-    list-style: none;
-    padding-left: 0;
+.contact-info>p {
+    font-size: var(--font-size-base);
+    margin-bottom: 2rem;
+}
+
+.contact-inner-title {
+    font-family: var(--font-title);
+    font-size: var(--font-size-base);
+    font-weight: var(--font-weight-normal);
+    margin-bottom: 0.2rem;
+}
+
+.contact-inner-p {
+    font-family: var(--font-body);
+    font-size: var(--font-size-small);
+}
+
+.line-separation {
+    height: 1px;
+    background-color: var(--border);
     margin: 1rem 0;
 }
 
-.contact-details li {
-    margin-bottom: 0.8rem;
-}
-
-.contact-details a {
-    color: var(--primary);
-    text-decoration: none;
-}
-
-.contact-details a:hover {
-    text-decoration: underline;
+.social-media h3 {
+    font-family: var(--font-title);
+    font-size: var(--font-size-medium);
+    font-weight: var(--font-weight-normal);
 }
 
 .social-links {
     display: flex;
-    gap: 1rem;
-    margin-top: 1rem;
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+    margin-bottom: 0.2rem;
 }
 
 .social-links a {
     color: var(--primary);
-    font-weight: 600;
-    text-decoration: none;
+    transition: color 0.3s ease;
 }
 
 .social-links a:hover {
-    text-decoration: underline;
+    color: var(--primary-accent);
 }
+
+/* right side contact form */
 
 .contact-form {
     flex: 1;
     min-width: 280px;
-    background: #fff;
+    background: var(--pforeground);
     padding: 2rem;
     border-radius: 1rem;
-    box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.05);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.05);
     display: flex;
     flex-direction: column;
 }
 
 .contact-form label {
     margin-top: 1rem;
-    font-weight: 600;
+    font-size: var(--font-size-small);
+    font-weight: var(--font-weight-normal);
 }
 
 .contact-form input,
 .contact-form textarea {
-    margin-top: 0.5rem;
-    padding: 0.75rem;
+    margin-top: 0.2rem;
+    padding: 0.3rem;
     border: 1px solid var(--border);
     border-radius: 0.5rem;
     font-family: var(--font-body);
 }
 
-.contact-form button {
-    margin-top: 1.5rem;
-    padding: 0.75rem;
-    background-color: #ec4899; /* pink */
-    color: white;
-    border: none;
-    border-radius: 0.5rem;
-    font-weight: 600;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.contact-form button:hover {
-    background-color: #db2777;
-}
-
 /* Responsive - Contact page*/
 
 @media (max-width: 768px) {
-.contact-inner {
-    flex-direction: column;
-    text-align: center;
-}
+    .contact-inner {
+        flex-direction: column-reverse;
+        gap: 2rem;
+    }
+    .contact-form {
+        width: 100%;
+    }
 
-.contact-form {
-    width: 100%;
+    .contact-info {
+        width: 100%;
+    }
 }
-
-.contact-info {
-    width: 100%;
-}
-
-.social-links {
-    justify-content: center;
-}
-}
-
