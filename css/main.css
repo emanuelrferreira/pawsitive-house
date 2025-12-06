@@ -545,6 +545,7 @@
     color: var(--secondary);
     color: var(--greenaccent);
     font-weight: 600;
+    cursor:pointer;
 }
 
 .extra-list {
